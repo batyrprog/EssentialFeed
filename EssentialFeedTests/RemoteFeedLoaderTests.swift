@@ -6,27 +6,9 @@
 //
 
 import XCTest
-
-// HTTPClient shared bize gerek dal indi
-
-class RemoteFeedLoader {
-    let url: URL
-    let client: HTTPClient
-    
-    init(url: URL, client: HTTPClient) {
-        self.url = url
-        self.client = client
-    }
-    
-    func load() {
-        client.get(from: url)
-    }
-}
-
-// class dalde, protocol etsen has gowy
-protocol HTTPClient {
-    func get(from url: URL)
-}
+import EssentialFeed
+// @testable goysak, hemme zatlary alya
+// goymasak, gerek yerlerimizi public edip cykmaly
 
 class RemoteFeedLoaderTests: XCTestCase {
     
