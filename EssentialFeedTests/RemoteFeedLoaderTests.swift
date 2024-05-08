@@ -85,12 +85,59 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
     }
     
+    func test_load_deliversItemsOn200HTTPResponseWithJSONList() {
+        
+        let (sut, client) = makeSUT()
+        let item1 = makeItem(id: UUID(),
+                             imageUrl: URL(string: "https://a-url.com")!)
+        let item2 = makeItem(id: UUID(),
+                             description: "another description",
+                             location: "another location",
+                             imageUrl: URL(string: "https://another-url.com")!)
+        
+        
+        let items = [item1.model, item2.model]
+        print("DEBUG: items is ", items)
+        
+        expect(sut, toCompleteWith: .success(items)) {
+            
+            let jsonData = makeItemsJSON([item1.json, item2.json])
+            client.complete(withStatusCode: 200, data: jsonData)
+        }
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
         return (sut, client)
+    }
+    
+    private func makeItemsJSON(_ items: [[String: Any]]) -> Data {
+        let json = ["items": items] 
+        return try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+    }
+    
+    private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageUrl: URL) -> (model: FeedItem, json: [String: Any]) {
+        
+        let item = FeedItem(id: id,
+                            description: description,
+                            location: location,
+                            imageUrl: imageUrl)
+        
+        let json: [String: Any] = [
+            "id" : id.uuidString,
+            "description": description,
+            "location": location,
+            "image": imageUrl.absoluteString
+        ].compactMapValues { $0 }
+//        .reduce(into: [String: Any]()) { (acc, e) in
+//            if let value = e.value {
+//                acc[e.key] = value
+//            }
+//        }
+        return (item, json)
     }
     
     private func expect(_ sut: RemoteFeedLoader,
