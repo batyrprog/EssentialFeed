@@ -17,6 +17,7 @@
 		BB3E066E2BE6BF4400B3143F /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3E06462BE6B6F500B3143F /* EssentialFeed.framework */; };
 		BB3E06752BE6C0A100B3143F /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06742BE6C0A100B3143F /* RemoteFeedLoaderTests.swift */; };
 		BB3E06792BE6FD2800B3143F /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */; };
+		BB3E06F52BEC444800B3143F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06F42BEC444800B3143F /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BB3E066C2BE6BF4400B3143F /* EssentialFeedAPIEndtoEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndtoEndTests.swift; sourceTree = "<group>"; };
 		BB3E06742BE6C0A100B3143F /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		BB3E06F42BEC444800B3143F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */,
+				BB3E06F42BEC444800B3143F /* HTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3E06792BE6FD2800B3143F /* RemoteFeedLoader.swift in Sources */,
+				BB3E06F52BEC444800B3143F /* HTTPClient.swift in Sources */,
 				BB3E06632BE6B8A400B3143F /* FeedLoader.swift in Sources */,
 				BB3E06612BE6B71800B3143F /* FeedItem.swift in Sources */,
 				BB3E064B2BE6B6F500B3143F /* EssentialFeed.docc in Sources */,

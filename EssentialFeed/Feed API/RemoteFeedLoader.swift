@@ -7,16 +7,6 @@
 
 import Foundation
 
-// class dalde, protocol etsen has gowy
-public protocol HTTPClient {
-    func get(from url: URL, competion: @escaping (HTTPClientResult) -> Void)
-}
-
-public enum HTTPClientResult {
-    case success(Data, HTTPURLResponse)
-    case failure(Error)
-}
-
 public class RemoteFeedLoader {
     private let url: URL
     private let client: HTTPClient
