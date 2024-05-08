@@ -18,6 +18,7 @@
 		BB3E06752BE6C0A100B3143F /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06742BE6C0A100B3143F /* RemoteFeedLoaderTests.swift */; };
 		BB3E06792BE6FD2800B3143F /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */; };
 		BB3E06F52BEC444800B3143F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06F42BEC444800B3143F /* HTTPClient.swift */; };
+		BB3E06F72BEC44C600B3143F /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E06F62BEC44C600B3143F /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BB3E06742BE6C0A100B3143F /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		BB3E06F42BEC444800B3143F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BB3E06F62BEC44C600B3143F /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				BB3E06782BE6FD2800B3143F /* RemoteFeedLoader.swift */,
 				BB3E06F42BEC444800B3143F /* HTTPClient.swift */,
+				BB3E06F62BEC44C600B3143F /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				BB3E06792BE6FD2800B3143F /* RemoteFeedLoader.swift in Sources */,
 				BB3E06F52BEC444800B3143F /* HTTPClient.swift in Sources */,
 				BB3E06632BE6B8A400B3143F /* FeedLoader.swift in Sources */,
+				BB3E06F72BEC44C600B3143F /* FeedItemsMapper.swift in Sources */,
 				BB3E06612BE6B71800B3143F /* FeedItem.swift in Sources */,
 				BB3E064B2BE6B6F500B3143F /* EssentialFeed.docc in Sources */,
 			);
