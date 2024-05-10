@@ -104,9 +104,9 @@
 		BB3E06482BE6B6F500B3143F /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				BB3E06642BE6B92B00B3143F /* Feed Feature */,
 				BB3E06772BE6FD1800B3143F /* Feed API */,
 				BB3E06762BE6FD0900B3143F /* Core */,
-				BB3E06642BE6B92B00B3143F /* Feed Feature */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
