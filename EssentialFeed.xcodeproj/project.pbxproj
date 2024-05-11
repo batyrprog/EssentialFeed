@@ -58,6 +58,7 @@
 		BB3E06FB2BEE762400B3143F /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		BB3E07002BEFC4B200B3143F /* XCTestCase+TrackMemoryLeaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+TrackMemoryLeaks.swift"; sourceTree = "<group>"; };
 		BB3E07022BEFDC0300B3143F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		BB3E07042BEFE9AA00B3143F /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		BB3E063C2BE6B6F500B3143F = {
 			isa = PBXGroup;
 			children = (
+				BB3E07042BEFE9AA00B3143F /* EssentialFeed.xctestplan */,
 				BB3E06482BE6B6F500B3143F /* EssentialFeed */,
 				BB3E06542BE6B6F500B3143F /* EssentialFeedTests */,
 				BB3E066B2BE6BF4400B3143F /* EssentialFeedAPIEndtoEndTests */,
